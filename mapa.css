@@ -1,0 +1,123 @@
+.fillter-buttons{
+    margin: 2rem;
+    text-align: center;
+}
+
+.fillter-buttons .btn{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: .4px;
+    color: burlywood;
+}
+
+.fillter-buttons .btn:hover{
+    color: rgb(100, 63, 7);
+}
+
+.port-box{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(245, 213, 166);
+    display: flex;
+    grid-template-rows: 1fr auto;
+    border: 2px solid rgb(100, 63, 7) ;
+    box-shadow: rgb(100, 63, 7);
+    align-self: center;
+}
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px ,1fr));
+    gap: 2rem;
+}
+
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.port-image img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
+}
+
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .2), #a77325);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: 0.5s;
+    padding: 0 2rem;
+    opacity: 0;
+}
+
+
+.port-box:hover .port-content{
+    opacity: 1;
+
+}
+.port-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.port-box:hover .port-image img{
+    transform: scale(1.1);
+}
+
+.port-content p{
+    font-size: .9rem;
+    margin: 5px 15px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.port-content a{
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #50340b;
+    outline:  2px solid #fff;
+}
+
+.port-content a i{
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.conteudo span{
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45rem;
+}
+
+.conteudo h2{
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50rem;
+}
+
+
